@@ -13,10 +13,10 @@ import paymentRoutes from "./routes/payment.js";
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
-const corsOptions = {
-  origin: true,
-  credentials: true,
-};
+// const corsOptions = {
+//   origin: true,
+//   credentials: true,
+// };
 
 mongoose.set("strictQuery", false);
 const connect = async () => {
@@ -31,11 +31,11 @@ const connect = async () => {
     console.log("MongoDB connected failed");
   }
 };
-// const corsOptions = {
-//   origin: "*",
-//   credentials: true, //access-control-allow-credentials:true
-//   optionSuccessStatus: 200,
-// };
+const corsOptions = {
+  origin: "*",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
 app.get('/', (req, res) => {
   res.send('Hello World!')
   })
