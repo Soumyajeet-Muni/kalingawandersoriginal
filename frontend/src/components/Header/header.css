@@ -92,7 +92,7 @@
       right          : 0;
       width          : calc(100% - 75%);
       height         : 100%;
-      background     : #fff;
+      background     : #0e0d0d;
       flex-direction : column;
       line-height    : 0.5rem;
       justify-content: center;

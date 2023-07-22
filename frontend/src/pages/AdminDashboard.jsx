@@ -32,8 +32,6 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div>
-      <div>
         <section>
           <Container>
             <Row>
@@ -126,18 +124,8 @@ const AdminDashboard = () => {
               </Col>
               <AllTour />
             </Row>
-
-            <div
-              style={{
-                display: "block",
-                width: 900,
-                padding: 30,
-              }}
-            ></div>
           </Container>
         </section>
-      </div>
-    </div>
   );
 };
 
