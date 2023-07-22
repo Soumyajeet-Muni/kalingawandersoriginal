@@ -36,6 +36,9 @@ const Booking = ({ tour, avgRating }) => {
          if (!user || user === undefined || user === null) {
             return alert('Please sign in')
          }
+         if( !localStorage.getItem("token")){
+            return alert('Please sign in')
+         }
 
          const res = await fetch(`${BASE_URL}/booking`, {
             method: 'post',
