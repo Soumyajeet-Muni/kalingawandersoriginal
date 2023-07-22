@@ -33,6 +33,7 @@ const Booking = ({ tour, avgRating }) => {
       console.log(booking)
       const totalAmount = Number(price) * Number(booking.guestSize) + Number(serviceFee)
       try {
+         console.log(booking.userEmail)
          if (!user || user === undefined || user === null) {
             return alert('Please sign in')
          }
